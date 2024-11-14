@@ -12,7 +12,6 @@ export const opacity = {
     opacity: 0,
   },
 };
-
 export const sildeUp = {
   initial: {
     y: "100%",
