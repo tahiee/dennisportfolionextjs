@@ -1,0 +1,180 @@
+@media (max-width: 550px) {
+  .nav {
+    display: none !important;
+  }
+  .shownav {
+    display: flex;
+  }
+  .menuName {
+    display: block !important;
+  }
+}
+.menuName {
+  display: none;
+}
+
+.header {
+  position: absolute;
+  color: white;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+  width: 100%;
+  box-sizing: border-box;
+
+  .navContainer {
+    .menuName p{
+      font-size: 18px;
+    }
+    .MenuEndicator {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      top: 40%;
+      left: -30%;
+    }
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .copyright {
+      font-size: 20px;
+    }
+    p {
+      margin: 0px;
+      transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+      position: relative;
+    }
+
+    .name {
+      display: flex;
+      overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+      // margin-left: 5px;
+      transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+      p {
+        font-size: 18px;
+        position: relative;
+        transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+      }
+      .codeby {
+        padding-left: 0.3rem;
+      }
+      .dennis {
+        padding-left: 0.3rem;
+      }
+      .snellenberg {
+        position: absolute;
+        left: 130px;
+        padding-left: 0.3rem;
+      }
+    }
+    &:hover {
+      .copyright {
+        transform: rotate(360deg);
+      }
+      .name {
+        padding-left: 30px;
+      }
+      .codeby {
+        transform: translateX(-150%);
+      }
+      .dennis {
+        transform: translateX(-100px);
+      }
+      .snellenberg {
+        transform: translateX(-70px);
+      }
+    }
+  }
+  .nav {
+    display: flex;
+    .el {
+      display: flex;
+      position: relative;
+      padding: 15px;
+      cursor: pointer;
+      p {
+        font-size: 18px;
+      }
+      &:hover {
+        .endicator {
+          transform: scale(1);
+        }
+      }
+      .endicator {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: scale(0) translateX(-50%);
+        transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+      }
+    }
+  }
+}
+
+.headerButtonContainer {
+  transform: scale(0);
+  position: fixed;
+  right: 0px;
+  z-index: 4;
+
+  .button {
+    position: relative;
+    right: 0px;
+    margin: 20px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #1c1d20;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  .burger {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    &::after,
+    &::before {
+      content: "";
+      display: block;
+      width: 40%;
+      height: 1px;
+      background-color: white;
+      margin: auto;
+      position: relative;
+      transition: all 0.3s;
+    }
+    &::after {
+      top: -5px;
+    }
+    &::before {
+      top: 5px;
+    }
+  }
+
+  .burgerActive {
+    &::after {
+      top: -1px;
+      transform: rotate(-45deg);
+    }
+    &::before {
+      top: 1px;
+      transform: rotate(45deg);
+    }
+  }
+}

@@ -1,0 +1,101 @@
+@media (max-width: 750px) {
+  .projects {
+    flex: 1;
+    padding-left: 100px !important;
+    padding-right: 100px !important;
+    margin-top: 200px !important;
+  }
+  
+  .modal img {
+    height: 60% !important;
+    width: 60% !important;
+  }
+}
+
+.projects {
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  flex-direction: column;
+  margin-top: 300px;
+
+  // .moreWorkP {
+  //   height: 80px;
+  //   width: 190px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   border-radius: 180px;
+  //   cursor: pointer;
+  //   border: 1px solid black;
+  //   font-size: 18px;
+  //   font-weight: 400;
+  //   &:hover{
+  //     background-color: #1C1D20;
+  //     color: white;
+  //     transition: all 0.5s ease-in-out;
+  //   }
+  // }
+  .body {
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+
+  .modalContainer {
+    height: 350px;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 3;
+  }
+
+  .modalSlider {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+
+  .modal {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal img {
+    height: auto;
+  }
+
+  .cursor,
+  .cursorLabel {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #455ce9;
+    color: white;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 300;
+    pointer-events: none;
+  }
+
+  .cursorLabel {
+    background-color: transparent;
+  }
+}

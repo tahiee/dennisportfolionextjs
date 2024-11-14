@@ -1,0 +1,53 @@
+.slidingImages {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 300px;
+  background-color: white;
+  overflow: hidden;
+
+  .slider {
+    display: flex;
+    position: relative;
+    gap: 3vw;
+    width: 120vw;
+    left: -10vw;
+
+    .project {
+      width: 25%;
+      height: 20vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .imageContainer {
+        position: relative;
+        width: 80%;
+        height: 80%;
+
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .circleContainer {
+    position: relative;
+    margin-top: 100px;
+    // z-index: 10;
+    overflow: visible;
+
+    .circle {
+      height: 100vh; /* Reduce height to stay within bounds */
+      width: 120%;
+      left: 0;
+      border-radius: 0 0 50% 50%;
+      background-color: white;
+      position: absolute;
+      box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+    }
+  }
+}
