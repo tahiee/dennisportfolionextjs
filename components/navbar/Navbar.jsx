@@ -35,7 +35,9 @@ const Navbar = ({ toggleMenu }) => {
         <div className={styles.nav}>
           <div className={styles.header}>
             <p>Navigation Menu</p>
-            <button onClick={toggleMenu} className={styles.closeButton}>×</button>
+            <button onClick={toggleMenu} className={styles.closeButton}>
+              ×
+            </button>
           </div>
 
           {navItems.map((item, index) => {
@@ -49,7 +51,7 @@ const Navbar = ({ toggleMenu }) => {
           <a href="/">Twitter</a>
         </div>
       </div>
-       <Curve />
+      <Curve />
     </motion.div>
   );
 };

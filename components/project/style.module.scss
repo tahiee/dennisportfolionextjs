@@ -5,11 +5,26 @@
     padding-right: 100px !important;
     margin-top: 200px !important;
   }
-  
+
   .modal img {
     height: 60% !important;
     width: 60% !important;
   }
+}
+@media (max-width: 390px) {
+  .projects {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    margin-top: 170px !important;
+  }
+  .modalContainer {
+    height: 250px !important;
+    width: 300px !important;
+  }
+  // .modal img {
+  //   height: 60% !important;
+  //   width: 60% !important;
+  // }
 }
 
 .projects {
@@ -60,6 +75,9 @@
   }
 
   .modalSlider {
+    // display: block;
+    // justify-content: center;
+    // align-items: center;
     height: 100%;
     width: 100%;
     position: relative;

@@ -1,6 +1,15 @@
-@media(min-width: 550px) {
-  .closeButton{
+@media (min-width: 550px) {
+  .closeButton {
     display: none !important;
+  }
+}
+@media (max-width: 390px) {
+  .menu {
+    height: 110vh !important;
+  }
+
+  .body {
+    padding: 40px !important;
   }
 }
 .menu {
@@ -25,16 +34,17 @@
       gap: 35px;
       line-height: 45px;
       margin-top: 20px;
-      
+
       .header {
         width: 300px;
         display: flex;
         justify-content: start;
         border-bottom: 1px solid grey;
         margin-bottom: 20px;
+        
         .closeButton {
           display: block;
-          top: 10%;
+          top: 5%;
           left: 75%;
           height: 80px;
           width: 80px;

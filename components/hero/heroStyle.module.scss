@@ -22,14 +22,32 @@
 }
 @media (max-width: 600px) {
   .mainHero img {
-    margin: auto ;
+    // background-image: url('../../public/images/DSC07033.jpg') !important;
     top: 5% !important;
     height: 90% !important;
     width: 90% !important;
     transform: scale(1.5) !important; /* Zoom image slightly */
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 390px) {
+  .mainHero img {
+    top: 2% !important;
+    left: 5% !important;
+    height: 100% !important;
+    width: 100% !important;
+    transform: scale(2) !important;
+  } /* Zoom image slightly */
+
+  .slideContainer {
+    top: calc(100vh - 320px) !important;
+  }
+  .slider p {
+    font-size: 140px !important;
+  }
+  .description {
+    top: calc(100vh - 90px) !important;
+    left: 10% !important;
+  }
 }
 
 .mainHero {

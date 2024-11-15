@@ -1,15 +1,14 @@
 @media (max-width: 1020px) {
-  .dec{
+  .dec {
     margin-top: 100px !important;
-  padding-left: 100px !important;
-  padding-right: 100px !important;
+    padding-left: 100px !important;
+    padding-right: 100px !important;
   }
-  .body{
+  .body {
     max-width: 1020px !important;
     gap: 20px !important;
     p {
       &:nth-of-type(1) {
-        
         font-size: 22px !important;
       }
       &:nth-of-type(2) {
@@ -24,18 +23,32 @@
     margin-top: 10px;
     width: 140px !important;
     height: 140px !important;
-    p{
-      font-size: 18px !important;
-    }
+    
   }
 }
 @media (max-width: 750px) {
+  .dec {
+    // margin-top: 60px !important;
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+  }
   .button {
     width: 120px !important;
     height: 120px !important;
-    p{
-      font-size: 16px !important;
+    top: 90% !important;
+    p {
+      font-size: 12px !important;
     }
+  }
+}
+@media (max-width: 390px) {
+  .dec {
+    // margin-top: 10px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .body {
+    flex-direction: column !important;
   }
 }
 
