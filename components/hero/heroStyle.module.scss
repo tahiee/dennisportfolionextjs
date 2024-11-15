@@ -31,11 +31,11 @@
 }
 @media (max-width: 390px) {
   .mainHero img {
-    top: 2% !important;
+    top: -1% !important;
     left: 5% !important;
-    height: 100% !important;
-    width: 100% !important;
-    transform: scale(2) !important;
+    height: 110% !important;
+    width: 110% !important;
+    transform: scale(2.1) !important;
   } /* Zoom image slightly */
 
   .slideContainer {
